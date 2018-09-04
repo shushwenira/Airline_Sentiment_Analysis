@@ -1,14 +1,18 @@
 
-Steps to run the Application:
 
------------------------------------------------------------------------------------------
+Classify airlines using tweet sentiments
+Perform topic modelling using LDA to know what people are talking about the worst and the best airline. 
+-------------------------------------------------------------------------------------------------------
+
+Steps to run the Application:
+-------------------------------------------------------------------------------------------------------
 
 Build the SBT application, Upload the Jar and the coresponding kaggle 
 (https://www.kaggle.com/crowdflower/twitter-airline-sentiment) csv data into a s3 bucket.
 
 Run AWS Elastic Map Reduce Step with Following configuration:
 
------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 Step type: Spark Application
 Name: Airline_Sentiment_Analysis
