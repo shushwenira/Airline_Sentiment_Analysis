@@ -1,13 +1,14 @@
 
 Steps to run the Application:
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
-Upload the Jar and the coresponding kaggle (https://www.kaggle.com/crowdflower/twitter-airline-sentiment) csv data into a s3 bucket.
+Build the SBT application, Upload the Jar and the coresponding kaggle 
+(https://www.kaggle.com/crowdflower/twitter-airline-sentiment) csv data into a s3 bucket.
 
 Run AWS Elastic Map Reduce Step with Following configuration:
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 Step type: Spark Application
 Name: Airline_Sentiment_Analysis
@@ -18,8 +19,3 @@ Arguments: s3://your-bukcet/Tweets.csv
 	   s3://your-bukcet/output-folder
 Action on failure: Continue
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Output will be present in your specified s3 location 
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------
